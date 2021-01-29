@@ -52,7 +52,7 @@ Requirements:
 
 ### Who ?
 
-Promotion Theano 2.27 @Becode (Groupe 4)
+Promotion Theano 2.27 @Becode (Group 4)
 
 - **Sijal Joshi**
 - **Mohammad Khodery**
