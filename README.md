@@ -53,9 +53,9 @@ Requirements:
 
 Promotion Theano 2.27 @Becode (Groupe 4)
 
-- Sijal Joshi
-- Mohammad Khodery
-- Louan Mastrogiovanni
+- **Sijal Joshi**
+- **Mohammad Khodery**
+- **Louan Mastrogiovanni**
 
 
 ### Pending ...
