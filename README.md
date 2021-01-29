@@ -23,6 +23,7 @@ This is a 3 days project. The dead line is on 29/01/21 at 4 PM.
 
 Requirements:
 
+- Data from all over Belgium
 - At least 10000 entries
 - The dataset needs to hold these columns:
 
