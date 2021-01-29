@@ -3,7 +3,7 @@
 
 
 ### What ?
-This group project consists of making predictions on real estate prices in Belgium using **Web scraping**.
+This group project consists of making predictions on real estate prices using **Web scraping**.
 
 
 ### Why ?
@@ -17,7 +17,7 @@ This is a 3 days project. The dead line is on 29/01/21 at 4 PM.
 
 ### How ?
 
-- Scraping immowebsites using Python librairies (Scrapy, BeautifulSoup, Selenium ...)
+- Scraping "immo websites" using Python librairies (Scrapy, BeautifulSoup, Selenium ...)
 - Create a dataset
 - Save the dataset in a .csv file
 
