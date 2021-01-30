@@ -58,5 +58,3 @@ Promotion Theano 2.27 @Becode (Group 4)
 - **Mohammad Khodery**
 - **Louan Mastrogiovanni**
 
-
-### Pending ...
