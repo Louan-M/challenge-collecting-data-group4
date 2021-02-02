@@ -4,7 +4,7 @@ This program is scrapying the data from the website: https://immo.vlan.be/en
 Four main url link has been used to make the scraping data easier.
 
 Certain changes has been done in the setting.py file 
-1. DOWNLOAD_DELAY = 4               ----- This help delay the program by 4 seconds
+1. DOWNLOAD_DELAY = 5               ----- This help delay the program by 5 seconds.
 2. FEED_EXPORT_ENCODING = 'utf-8'   ----- This help scraped data be in UTF-O standard encording this makes scraped data clean and easy to understand.
 3. HTTPCACHE_ENABLED = True         ----- This will not hit the server for requests already done tests will run much faster and the website will save resources.
 """
@@ -53,6 +53,7 @@ class InformationSpider(scrapy.Spider):
             elif link == rent_apartment:
                 type_of_property = "apartment"
                 type_of_sale = "rent"
+                
             yield scrapy.Request(url=link, callback=self.parse, meta={'property_type': type_of_property, 'sale_type': type_of_sale},
             headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36"})
       
@@ -117,10 +118,13 @@ class InformationSpider(scrapy.Spider):
             except:
                 data_gathered = None
             
-            for info_match, data_match in zip(left,right):
-                if info_match == search:
+            if search in left:
+                for info_match, data_match in zip(left,right):
                     data_gathered = data_match
-            
+                
+            else:
+                data_gathered = None
+                
             return data_gathered
         
         def yes_no(result):
